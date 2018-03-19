@@ -98,7 +98,7 @@ Trello helped me to organise all of the various tasks that needed to be done to 
 
 ---
 ## Coding
-It took me a lot longer to get around to coding this project than I had anticipated. We were given the assessment on a Thursday and I had the Figma completed by Friday afternoon. My plan had been to create all of the custom piel graphics on Saturday and begin coding the website on Sunday. It took me both Saturday and Sunday to get all of the graphics done so mentally I felt like I was falling behind, even though most of my peers were at the same stage that I was. By Monday afternoon I was still playing catchup with the README.md file (why won't I learn to document as I go?), leaving me with 48 hours and a few late nights to put my coding skills to the test and get the website deployed.
+It took me a lot longer to get around to coding this project than I had anticipated. We were given the assessment on a Thursday and I had the Figma completed by Friday afternoon. My plan had been to create all of the custom pixel graphics on Saturday and begin coding the website on Sunday. It took me both Saturday and Sunday to get all of the graphics done so mentally I felt like I was falling behind, even though most of my peers were at the same stage that I was. By Monday afternoon I was still playing catchup with the README.md file (why won't I learn to document as I go?), leaving me with 48 hours and a few late nights to put my coding skills to the test and get the website deployed.
 
 ---
 ## Testing & Optimization

@@ -1,0 +1,141 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.center-box {
+    width: 80vw;
+    height: 50vh;
+    margin: 15vh 10vw 10vh 10vw;
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+}
+
+/* .header-box {
+    width: 100vw;
+    height: 10vh;
+    background-color: #3752A3;
+}
+
+.top-trap {
+    width: 100vw;
+    height: 3vh;
+    background-color: #0B1A47;
+}
+
+  .left-trap {
+    width: 3vw;
+    height: 87vh;
+    margin-top: -1vh;
+    background-color: #202020;
+    transform: perspective(20vw) rotateY(20deg);
+    float: left;
+  }
+
+  .right-trap {
+    
+    width: 3vw;
+    height: 87vh;
+    margin-top: -1vw;
+    background-color: #202020;
+    transform: perspective(20vw) rotateY(-20deg);
+    float: right;
+  }
+
+  .bottom-trap {
+    width: 98vw;
+    height: 8vh;
+    margin-left: 1vw;
+    margin-top: 19vh;
+    background-color: #0B1A47;
+    transform: perspective(10vw) rotateX(5deg);
+} */
+
+/* If the screen size is 601px or more */
+@media only screen and (min-width: 801px) {
+    #stretch-header {
+        width: 50vw;
+        height: auto;
+        position: fixed;
+      left: 50%;
+      top: 15%;
+      transform: translate(-50%);
+    }
+  }
+  
+  /* If the screen size is 600px or less */
+  @media only screen and (max-width: 800px) {
+    #stretch-header {
+        width: 80vw;
+        height: 15vh;
+        position: fixed;
+      left: 50%;
+      top: 15%;
+      transform: translate(-50%);
+    }
+}
+#title {
+    height: 10vh;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    justify-items: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: inherit;
+}
+
+.stretch-skill {
+    height: 100px;
+    width: 100px;
+}
+
+
+.outer{
+    width: 100vw;
+    height: 100vh;
+    white-space: nowrap;
+    position: relative;
+    overflow-x:scroll;
+    overflow-y:hidden;
+  }
+  
+  .outer div{
+    width: 100%;
+    height: 100%;
+    background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    display: inline-block;
+    zoom: 1;
+  }
