@@ -106,7 +106,16 @@ It took me a lot longer to get around to coding this project than I had anticipa
 
 ---
 ## Technical Challenges
+- Using a horizontal scroller that would move when you scroll downwards - would transform my items
+- whitespace: nowrap; issues with adding content to box
+- finally went with flexbox which was heaps easier
 
+- using divs for cabinet frame didn't work well
+- need to create svg for frame
+- forcing flexbox to work like css grid because i forgot about grid
+- trying to figure out grid because I can't get flexbox to work properly
+- images not resizing in grid / trying to resize breaks grid
+- have to make different sized images
 
 ---
 ## Lessons Learned

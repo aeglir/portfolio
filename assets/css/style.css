@@ -1,43 +1,114 @@
-html, body {
+    html, body {
     padding: 0;
     margin: 0;
-}
-
-body {
-    /* background-image: url("/background.jpg");
+    background-color: #000;
+    background-image: url("/background.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
-    background-attachment: fixed;
-    background-size: cover; */
+    background-size: cover; 
+    overflow:auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+                                                                                                                            /* START PRELOADER */
+
+.loading-text {
+        font-family: 'Press Start 2P', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 3em;
+        line-height: 100vh;
+}
+
+.loading-background {
+    background: #000;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loading .one {
+    opacity: 0;
+    -webkit-animation: dot 3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 3s infinite;
+    animation-delay: 0.0s;
+}
+
+.loading .two {
+    opacity: 0;
+    -webkit-animation: dot 3s infinite;
+    -webkit-animation-delay: 0.2s;
+      animation: dot 3s infinite;
+      animation-delay: 0.5s;
+}
+
+.loading .three {
+    opacity: 0;
+    -webkit-animation: dot 3s infinite;
+    -webkit-animation-delay: 0.3s;
+     animation: dot 3s infinite;
+     animation-delay: 1s;
+}
+
+@keyframes dot { /* ADD @-webkit-keyframes for webkit support */
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/* END PRELOADER */
+
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.center-box {
-    width: 80vw;
-    height: 50vh;
-    margin: 15vh 10vw 10vh 10vw;
-    background: #fff;
-    border-radius: 10px;
+                                                                                                                            /* START LANDING PAGE */
+
+.landing-header {
+    width: 60vw;
+    height: auto;
+    margin: 10vh 20vw 3vh 20vw;
+}
+.landing-main {
+    width: 90vw;
+    height: auto;
+    margin: 7vh 5vw 0vh 5vw;
+}
+.start-button {
+    width: 50vw;
+    margin: 20vmin 25vw 0vh 25vw;
+    background-color: #FFAF46;
+    border: 3px solid #000;
+    border-radius: 5px;
 }
 
+a {
+    text-decoration: none;
+}
 
 h1 {
-    font-family: 'Press Start 2P', cursive;
-    color: #fff;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
 }
 
-/* .header-box {
+/* END LANDING PAGE */
+
+                                                                                                                    /* START CABINET FRAME */
+
+.header-box {
     width: 100vw;
     height: 10vh;
     background-color: #3752A3;
 }
-
 .top-trap {
     width: 100vw;
     height: 3vh;
     background-color: #0B1A47;
 }
-
   .left-trap {
     width: 3vw;
     height: 87vh;
@@ -46,7 +117,6 @@ h1 {
     transform: perspective(20vw) rotateY(20deg);
     float: left;
   }
-
   .right-trap {
     
     width: 3vw;
@@ -56,53 +126,63 @@ h1 {
     transform: perspective(20vw) rotateY(-20deg);
     float: right;
   }
-
   .bottom-trap {
     width: 98vw;
     height: 8vh;
     margin-left: 1vw;
-    margin-top: 19vh;
     background-color: #0B1A47;
     transform: perspective(10vw) rotateX(5deg);
-} */
-
-/* If the screen size is 601px or more */
-@media only screen and (min-width: 801px) {
-    #stretch-header {
-        width: 50vw;
-        height: auto;
-        position: fixed;
-      left: 50%;
-      top: 15%;
-      transform: translate(-50%);
-    }
-  }
-  
-  /* If the screen size is 600px or less */
-  @media only screen and (max-width: 800px) {
-    #stretch-header {
-        width: 80vw;
-        height: 15vh;
-        position: fixed;
-      left: 50%;
-      top: 15%;
-      transform: translate(-50%);
-    }
 }
-#title {
+/* END CABINET FRAME */
+.menu-button {
+    width: 20vw;
+    height: auto;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.center-box {
+    width: 75vw;
+    height: 60vh;
+    margin: 10vh 10vw 9vh 9vw;
+    background: rgba(255,255,255,.8);
+    border-radius: 10px;
+}
+
+.cameo-heading {
     height: 10vh;
-    width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: auto;
 }
 
-.container {
+                                                                                                                /* START SIDE SCROLL FUNCTIONALITY */
+.scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; 
+}
+
+.item {
+    flex: 0 0 auto; 
+}
+
+/* END SIDE SCROLL FUNCTIONALITY */
+
+
+                                                                                                                    /* START SKILLS AND PROJECTS GRID */
+
+.row {
     display: flex;
     justify-content: space-around;
     justify-items: space-around;
     align-items: center;
     align-content: space-around;
+    flex-wrap: wrap;
 }
 
 .column {
@@ -110,32 +190,200 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     height: inherit;
-}
-
-.stretch-skill {
-    height: 100px;
-    width: 100px;
+    flex-wrap: wrap;
 }
 
 
-.outer{
-    width: 100vw;
-    height: 100vh;
-    white-space: nowrap;
+/* END SKILLS AND PROJECTS GRID */
+
+
+
+p {
+    font-size: 2.5vh;
+    margin: 0vh 5vw 2vh 5vw;
     position: relative;
-    overflow-x:scroll;
-    overflow-y:hidden;
+    top: -3vh;
+}
+
+.contact-page{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    position: relative;
+    top: -5vh;
+}
+
+.social-grid {
+    display: grid;
+    width: 75vw;
+    height: 10vh;
+    grid-template-columns: repeat(6, 12vmin);
+    grid-template-rows: 12vmin;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+}
+
+.figure {
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon {
+    max-width: 100%;
+    height: auto;
+    outline: 0;
+}
+
+
+                                                                                                                      /* START MEDIA QUERIES */
+
+/* On screens that are 450px or more */
+    @media screen and (min-width: 450px) {
+        p {
+            font-size: 3vh;
+            margin: 0vh 5vw 2vh 5vw;
+            position: relative;
+            top: -3vh;
+        }
+    }
+/* FULL SCREEN MEDIA QUERY */
+
+@media screen and (min-width: 800px){
+    p {
+    font-size: 4vh;
+    margin: 0vh 10vw 2vh 10vw;  
+    position: relative;
+    top: -3vh;
+    }
+
+    .contact-page {
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+
+/* ----------- iPad Pro ----------- */
+    /* Portrait and Landscape */
+    @media only screen 
+      and (min-device-width: 1024px) 
+      and (max-device-width: 1366px) 
+      and (-webkit-min-device-pixel-ratio: 1.5) {
+        p {
+            font-size: 3vh;
+            margin: 0vh 5vw 2vh 5vw;
+            position: relative;
+            top: -3vh;
+        }
+    }
+
+
+
+.header-ribbon {
+    width: 80vw;
+    height: auto;
+    /* margin: 0vh 12.5vw 0vh 17.5vw; */
+    position: relative;
+    top: -5vh;
+    left: -2.5vw;
+}
+
+
+
+
+                                                                                                                        /* START CONTACT FORM STYLING */
+
+#contact-form {
+    width:60%;
+    margin: 0px 20px;
+   }
+  
+  form {
+    width:30vw;
+    margin-left: auto;
+    padding: 2em 0;
+    text-align:center;
+    
+   }
+  
+  input,
+  textarea{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 4vh;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color:lightgrey;
   }
   
-  .outer div{
-    width: 100%;
-    height: 100%;
-    background-image: url("/background.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    display: inline-block;
-    zoom: 1;
+  textarea {
+    height: 100px;
+    resize: none;
   }
+  
+  #send{
+    font-size:20px;
+    width: 10vw;
+    height: auto;
+    background-color: #FFAF46;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', sans-serif;
+  }
+  
+  #send:hover{
+    background-color:#000;
+    color: white;
+
+   }
+  
+  :focus{
+    outline:none;
+    outline-color:none;
+  }
+
+  /* END CONTACT FORM */
+
+
+
+                                                                                                                        /* START SKILLS GRID */
+
+
+  .skills-grid {
+    width: 75vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(4, 15vh);
+    justify-items: center;
+    position: relative;
+    top: -6vh;
+    
+  }
+
+
+  /* END SKILLS GRID */
+
+
+
+                                                                                                                /* START PROJECTS GRID */
+
+
+  .projects-grid {
+    width: 75vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 15vh);
+    justify-items: center;
+  }
+
+
+  /* END PROJECTS GRID */
+
