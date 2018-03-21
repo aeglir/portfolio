@@ -9,9 +9,9 @@
 - [Style Guide](#style-guide)
 - [Trello](#trello)
 - [Coding](#coding)
-- [Testing & Optimization](#testing-optimization)
 - [Technical Challenges](#technical-challenges)
 - [Lessons Learned](#lessons-learned)
+- [Roadmap](#roadmap)
 - [Final Product](#final-product)
 
 ## Concept
@@ -98,30 +98,42 @@ Trello helped me to organise all of the various tasks that needed to be done to 
 
 ---
 ## Coding
+
 It took me a lot longer to get around to coding this project than I had anticipated. We were given the assessment on a Thursday and I had the Figma completed by Friday afternoon. My plan had been to create all of the custom pixel graphics on Saturday and begin coding the website on Sunday. It took me both Saturday and Sunday to get all of the graphics done so mentally I felt like I was falling behind, even though most of my peers were at the same stage that I was. By Monday afternoon I was still playing catchup with the README.md file (why won't I learn to document as I go?), leaving me with 48 hours and a few late nights to put my coding skills to the test and get the website deployed.
 
----
-## Testing & Optimization
-
+In that time I produced a mobile-first MVP that is quite close to my initial design. I'm very pleased with what I've been able to make, although it would have been much easier and faster if we were able to implement Javascript and other libraries/frameworks.
 
 ---
 ## Technical Challenges
-- Using a horizontal scroller that would move when you scroll downwards - would transform my items
-- whitespace: nowrap; issues with adding content to box
-- finally went with flexbox which was heaps easier
+Some of the technical challenges I faced include (but definitely aren't limited to):
+- Using a horizontal scroller that would move when you scroll downwards - it would transform my items
+- Whitespace: nowrap; issues with adding content to box
+- Using Flexbox to help with horizontal scrolling
 
-- using divs for cabinet frame didn't work well
-- need to create svg for frame
-- forcing flexbox to work like css grid because i forgot about grid
-- trying to figure out grid because I can't get flexbox to work properly
-- images not resizing in grid / trying to resize breaks grid
-- have to make different sized images
+- Using divs for cabinet frame didn't work well - had to create images instead
+- Forcing flexbox to work like CSS Grid because I forgot about grid
+- Trying to figure out grid because I couldn't get flexbox to work properly
+- Images not resizing in grid / trying to resize breaks grid - had to make different sized images for each media query
+- Use JS to make exit button on menu work
 
 ---
 ## Lessons Learned
 
+**MOBILE FIRST.** I began coding my portfolio and had a (fairly decent) MVP made before I remembered that it needed to be responsive - needless to say, it did not resize well. I ended up starting again so I could develop the mobile version first.
+
+**ASK FOR HELP.** There were times where I sat in front of my laptop for an hour trying to figure out an issue that was solved in a few minutes once I asked somebody for help. It was also great to be able to bounce ideas off of and rubber duck debug with other people. 
+
+**PLANNING IS GOOD, BUT SO IS CODING.** While I'm so glad that I made an in-depth plan for the website, in hindsight I spent more time making it perfect when I could've been working on the code.
+
+---
+
+## Roadmap
+
+- Using JS to help with Projects popup functionality
+- Add directional arrows to indicate side-scrolling function
 
 ---
 ## Final Product
 
+The final product can be found here:
 

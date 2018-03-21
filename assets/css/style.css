@@ -17,7 +17,7 @@
         font-family: 'Press Start 2P', sans-serif;
         text-align: center;
         color: white;
-        font-size: 3em;
+        font-size: 8vw;
         line-height: 100vh;
 }
 
@@ -29,26 +29,26 @@
 
 .loading .one {
     opacity: 0;
-    -webkit-animation: dot 3s infinite;
+    -webkit-animation: dot 2.5s infinite;
     -webkit-animation-delay: 0.0s;
-    animation: dot 3s infinite;
+    animation: dot 2.5s infinite;
     animation-delay: 0.0s;
 }
 
 .loading .two {
     opacity: 0;
-    -webkit-animation: dot 3s infinite;
-    -webkit-animation-delay: 0.2s;
-      animation: dot 3s infinite;
-      animation-delay: 0.5s;
+    -webkit-animation: dot 2.5s infinite;
+    -webkit-animation-delay: 0.1s;
+      animation: dot 2.5s infinite;
+      animation-delay: 0.2s;
 }
 
 .loading .three {
     opacity: 0;
-    -webkit-animation: dot 3s infinite;
-    -webkit-animation-delay: 0.3s;
-     animation: dot 3s infinite;
-     animation-delay: 1s;
+    -webkit-animation: dot 2.5s infinite;
+    -webkit-animation-delay: 0.1s;
+     animation: dot 2.5s infinite;
+     animation-delay: 0.4s;
 }
 
 @keyframes dot { /* ADD @-webkit-keyframes for webkit support */
@@ -86,6 +86,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 h1 {
@@ -95,11 +96,13 @@ h1 {
     text-align: center;
 }
 
+
+
 /* END LANDING PAGE */
 
                                                                                                                     /* START CABINET FRAME */
 
-.header-box {
+/* .header-box {
     width: 100vw;
     height: 10vh;
     background-color: #3752A3;
@@ -130,16 +133,53 @@ h1 {
     width: 98vw;
     height: 8vh;
     margin-left: 1vw;
+    margin-top: -5vh;
     background-color: #0B1A47;
     transform: perspective(10vw) rotateX(5deg);
+} */
+
+.frame-header {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 0;
 }
+.cameo-heading {
+    position: relative;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+    height: auto;
+    top: 0vh;
+    z-index: 1;
+}
+.frame-footer {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    bottom: 0;
+}
+.border-left {
+    height: 100vh;
+    width: 4.5vw;;
+    position: absolute;
+    left: 0;
+}
+.border-right {
+    height: 100vh;
+    width: 4.5vw;
+    position: absolute;
+    right: 0;
+}
+
 /* END CABINET FRAME */
 .menu-button {
-    width: 20vw;
+    width: 25vw;
     height: auto;
     margin-left: auto;
 	margin-right: auto;
-	display: block;
+    display: block;
+    z-index: 1;
 }
 
 .center-box {
@@ -148,18 +188,24 @@ h1 {
     margin: 10vh 10vw 9vh 9vw;
     background: rgba(255,255,255,.8);
     border-radius: 10px;
+    position: relative;
 }
 
-.cameo-heading {
-    height: 10vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+
+.cameo-sprite {
+    height: 40vh;
     width: auto;
+    position: relative;
+    top: 0vh;
+    left: -10vw;
 }
 
                                                                                                                 /* START SIDE SCROLL FUNCTIONALITY */
 .scroll {
+    margin: 0 4.7vw;
+    top: 3vh;
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -199,12 +245,21 @@ h1 {
 
 
 p {
-    font-size: 2.5vh;
-    margin: 0vh 5vw 2vh 5vw;
+    font-size: 2.6vh;
+    margin: 1vh 5vw 2vh 5vw;
     position: relative;
     top: -3vh;
 }
 
+.about-shifted {
+    display: grid;
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 21.5vh;
+
+}
 .contact-page{
     display: flex;
     justify-content: space-between;
@@ -213,27 +268,7 @@ p {
     top: -5vh;
 }
 
-.social-grid {
-    display: grid;
-    width: 75vw;
-    height: 10vh;
-    grid-template-columns: repeat(6, 12vmin);
-    grid-template-rows: 12vmin;
-    padding: 0;
-    margin: 0;
-    justify-items: center;
-}
 
-.figure {
-    padding: 0;
-    margin: 0;
-}
-
-.social-icon {
-    max-width: 100%;
-    height: auto;
-    outline: 0;
-}
 
 
                                                                                                                       /* START MEDIA QUERIES */
@@ -295,14 +330,13 @@ p {
                                                                                                                         /* START CONTACT FORM STYLING */
 
 #contact-form {
-    width:60%;
+    width:100%;
     margin: 0px 20px;
    }
   
   form {
-    width:30vw;
+    width:75vw;
     margin-left: auto;
-    padding: 2em 0;
     text-align:center;
     
    }
@@ -311,30 +345,33 @@ p {
   textarea{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 30vw;
+    width: 60vw;
+    margin: 1vh 7.5vw 1vh 7.5vw;
     height: 4vh;
-    margin-top: 30px;
-    padding: 10px;
+    padding: 4px;
     border-radius: 5px;
     border: none;
     font-family: 'Open Sans', sans-serif;
     background-color:lightgrey;
+    text-align: center;
   }
   
   textarea {
-    height: 100px;
+    height: 16vh;
+    padding: 1vh;
     resize: none;
   }
   
   #send{
-    font-size:20px;
-    width: 10vw;
+    font-size:4vw;
+    width: 30vw;
     height: auto;
     background-color: #FFAF46;
     color: #000;
-    border: 3px solid #000;
+    border: 2px solid #000;
     border-radius: 5px;
     font-family: 'Press Start 2P', sans-serif;
+    margin: 0vh 22.5vw 0vh 22.5vw;
   }
   
   #send:hover{
@@ -387,3 +424,225 @@ p {
 
   /* END PROJECTS GRID */
 
+                                                                                                                /* START SOCIAL ICON GRID */
+
+  .social-grid {
+    display: grid;
+    width: 75vw;
+    height: 10vh;
+    grid-template-columns: repeat(6, 12.5vmin);
+    grid-template-rows: 10vmin;
+    padding: 0;
+    margin-top: 2vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.figure {
+    padding: 0;
+    margin: 0;
+}
+/* END SOCIAL ICON GRID */
+
+
+
+                                                                                                                        /* START MENU STYLING */
+
+.menu {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 13vw;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    top: 3vh;
+    margin: 0 12vw 10vh 0;
+}
+
+#exit {
+    text-align: right;
+    margin: 0 5vw;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  bottom: -3vh;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: relative;
+  width: 70vw;
+  height: 70vh;
+  margin: 20vh 10vw 10vh 9vw;
+  position: relative;
+  top: -100vh;
+  border-radius: 10px;
+  
+  background: rgba(0,0,0,.95);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-150%, 0);
+  transition: transform 0.0s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  display: flex;
+  justify-items: space-between;
+  flex-direction: column;
+}
+
+#menu li
+{
+  margin-top: 4vh;
+  font-size: 7vw;
+  font-family: 'Press Start 2P', sans-serif;
+  color: #FFF;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+/* END MENU STYLING  */
+
+
+                                                                                                            /* START PROJECT POPUP STYLING */
+
+
+#projectToggle
+{
+  display: block;
+  position: relative;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#projectToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5vw;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#project
+{
+  position: relative;
+  width: 82vw;
+  height: 70vh;
+  margin: 20vh 10vw 10vh 9vw;
+  position: relative;
+  top: -95vh;
+  left: -12vw;
+  border-radius: 10px;
+  border: 8px solid #000;
+  
+  background: rgba(0,0,0,.95);
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+/*   
+  transform-origin: 0% 0%;
+  transform: translate(0%, -150%);
+  transition: transform 0.0s cubic-bezier(0.77,0.2,0.05,1.0); */
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#projectToggle input:checked
+{
+  transform: none;
+}
+
+
+                                                                                                            /* START PROJECT STYLING INSIDE POPUP */
+
+  .app-icon {
+      width: 30vw;
+      height: auto;
+      margin: 0 26vw 0 26vw;
+  }
+
+  .project {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 8.5vw;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    top: 5vh;
+    margin: 0 0;
+}
+
+#exit {
+    text-align: right;
+    padding: 2vh 0 0 0;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 8vw;
+    color: #FFF;
+
+}
+
+.project-text {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    font-size: 6vw;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.project-link {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #FFF;
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 5vh;
+}

@@ -6,7 +6,7 @@
     <!-- make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <!-- linking to Google fonts -->
@@ -41,161 +41,209 @@
 
 <body>
     <!-- CABINET FRAME -->
-    <header>
-        <div class="header-box">
-            <img src="assets/img/desktopheader.png" class="cameo-heading">
-        </div>
-        <div class="top-trap"></div>
-        <div class="left-trap"></div>
-        <div class="right-trap"></div>
-    </header>
+    <section>
+        <img src="assets/img/border.png" class="border-left">
+        <img src="assets/img/border.png" class="border-right">
+        <img src="assets/img/frame-header.png" class="frame-header">
+        <img src="assets/img/frame-footer.png" class="frame-footer">
+        <img src="assets/img/desktopheader.png" class="cameo-heading">
+    </section>
 
     <!-- CONTENT SCROLL -->
     <main class="scroll">
 
         <!-- ABOUT PAGE -->
-        <div class="item screen-one">
+        <div class="item" id="about">
+
             <main class="center-box">
                 <img src="assets/img/ribbons/about-sm.png" class="header-ribbon">
-                    <div class=""><p>"Hi, my name is Cameo! I am currently studying at Coder Academy to become a Web Developer. <br><br>
-                    I have a penchant for problem solving and a love for fast-paced environments where I can put my skills to the test. <br><br>
-                    In my spare time, I like to camp and hike with my dogs.”</p>
-                    </div>
-                    
-                </main>
-            
+                <p>"Hi, my name is Cameo! I am currently studying at Coder Academy to become a Web Developer.</p>
+                <p class="about-shifted">I have a penchant for problem solving and a love for fast-paced environments where I can put my skills to
+                    the test.
+                    <br>
+                    <br> In my spare time I enjoy camping and hiking with my dogs.”</p>
+                <img src="assets/img/cameo-sprite.png" class="cameo-sprite">
+            </main>
+
         </div>
 
         <!-- SKILLS PAGE -->
-        <div class="item screen-two">
+        <div class="item" id="skills">
             <main class="center-box">
-                    <img src="assets/img/ribbons/skills-sm.png" class="header-ribbon">
-                    <section class="skills-grid">
-                                <figure>
-                                    <img src="assets/img/html5-shield.png">
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/css3-shield.png">
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/js-round.png">
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/express-shield.png">
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/node-shield.png">
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/react-shield2.png">
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/ruby-shield.png">
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/rails-shield.png">
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/mongodb-shield.png">
-                                </figure>
-                                <figure></figure>
-                                <figure>
-                                    <img src="assets/img/git-shield.png">
-                        </section> 
+                <img src="assets/img/ribbons/skills-sm.png" class="header-ribbon">
+                <section class="skills-grid">
+                    <figure>
+                        <img src="assets/img/html5-shield.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/css3-shield.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/js-round.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/express-shield.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/node-shield.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/react-shield2.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/ruby-shield.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/rails-shield.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/mongodb-shield.png">
+                    </figure>
+                    <figure></figure>
+                    <figure>
+                        <img src="assets/img/git-shield.png">
+                </section>
 
 
             </main>
         </div>
 
         <!-- PROJECTS PAGE -->
-        <div class="item screen-three">
-                <main class="center-box">
-                        <img src="assets/img/ribbons/projects-sm.png" class="header-ribbon">
-                        <section class="projects-grid">
-                                <figure>
-                                    <img src="assets/img/terminalapp.png">
-                                </figure>
-                                <figure>
-                                        <img src="assets/img/empty-cell.png">  
-                                </figure>
-                                <figure>
-                                        <img src="assets/img/empty-cell.png"> 
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/empty-cell.png"> 
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/empty-cell.png"> 
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/empty-cell.png"> 
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/empty-cell.png"> 
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/empty-cell.png"> 
-                                </figure>
-                                <figure>
-                                    <img src="assets/img/empty-cell.png"> 
-                                </figure>
-                        </section>
-                </main>
+        <div class="item" id="projects">
+            <main class="center-box" id="projectToggle">
+                <img src="assets/img/ribbons/projects-sm.png" class="header-ribbon">
+                <section class="projects-grid">
+                    <figure id="projectToggle">
+                        <input type="checkbox" id="terminal-app" />
+                        <label for="terminal-app"><img src="assets/img/terminalapp.png"></label>
+                    </figure>
+                    <figure>
+                        <img src="assets/img/empty-cell.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/empty-cell.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/empty-cell.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/empty-cell.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/empty-cell.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/empty-cell.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/empty-cell.png">
+                    </figure>
+                    <figure>
+                        <img src="assets/img/empty-cell.png">
+                    </figure>
+                </section>
+
+                <!-- POPUP SCREEN -->
+                <!-- <section id="project">
+                        <div id="exit">X</div>
+                        <img src="assets/img/terminalapp.png" class="app-icon">
+                        <h1 class="project">SLACK BOT</h1>
+                        <p class="project-text">A terminal app to post coding challenges to the Coder Academy Slack group.</p>
+                        <p class="project-link"><a href="#">VIEW ON GITHUB</a></p>
+                        </a>
+                    </section> -->
+            </main>
         </div>
 
         <!-- CONTACT PAGE -->
-        <div class="item screen-four">
+        <div class="item" id="contact">
             <main class="center-box">
                 <img src="assets/img/ribbons/contact-sm.png" class="header-ribbon">
                 <div class="contact-page">
                     <div class="column">
-                                <div id ="contact_form">
-                                        <input type="text" name = "name" id="name" placeholder ="Name"><br/>
-                                        <input type="text" name = "email" id="email"
-                                         placeholder="Email"><br/>
-                                        <textarea type="text" name="message" id="message"
-                                         placeholder="Message"></textarea><br>
-                                        <input type = "submit" id ="send" value="Send">
-                                        
-                                        </form>
-                                      </div>
-                        </div>
-                        <div class="column">
-                            <div class="row">
-                                <section class="social-grid">
-                                        <figure class="social-icon">
-                                                <a href="assets/resume.pdf"><img src="assets/img/cv-sm.png" class="social-icon"></a>
-                                            </figure>
-                                            <figure>
-                                                <img src="assets/img/github-sm.png">
-                                            </figure>
-                                            <figure> 
-                                                <img src="assets/img/linkedin-sm.png">
-                                            </figure>
-                                            <figure>
-                                                <img src="assets/img/codepen-sm.png">
-                                            </figure>
-                                            <figure>
-                                                <img src="assets/img/codewars-sm.png">
-                                            </figure>
-                                            <figure>
-                                                <img src="assets/img/twitter-sm.png">
-                                            </figure>
-                            </section>
-                            <p>Let's collaborate!</p>
-                            </div>
+                        <div id="contact_form">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <textarea type="text" name="message" id="message" placeholder="Message"></textarea>
+                            <input type="submit" id="send" value="SEND">
+
+                            </form>
                         </div>
                     </div>
+                    <div class="column">
+                        <div class="row">
+                            <section class="social-grid">
+                                <figure class="social-icon">
+                                    <a href="assets/resume.pdf">
+                                        <img src="assets/img/cv-sm.png">
+                                    </a>
+                                </figure>
+                                <figure>
+                                        <a href="https://github.com/aeglir">
+                                            <img src="assets/img/github-sm.png">
+                                        </a>
+                                </figure>
+                                <figure>
+                                        <a href="https://linkedin.com/in/cameo-langford">
+                                            <img src="assets/img/linkedin-sm.png">
+                                        </a>
+                                </figure>
+                                <figure>
+                                        <a href="https://codepen.io/aeglir">
+                                            <img src="assets/img/codepen-sm.png">
+                                        </a>
+                                </figure>
+                                <figure>
+                                        <a href="https://www.codewars.com/users/aeglir">
+                                            <img src="assets/img/codewars-sm.png">
+                                        </a>
+                                </figure>
+                                <figure>
+                                        <a href="https://www.twitter.com/cameolangford">
+                                            <img src="assets/img/twitter-sm.png">
+                                        </a>
+                                </figure>
+                            </section>
+                            <p>Let's collaborate!</p>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </main>
+    <nav id="menuToggle">
+        <input type="checkbox" id="menu-popup" />
+        <label for="menu-popup">
+            <img src="assets/img/menu.png" class="menu-button">
+        </label>
 
+        <ul id="menu">
+            <li id="exit">X</li>
+            <h1 class="menu">MENU</h1>
+            <a href="#about">
+                <li>
+                    <img src="assets/img/arrow.png"> ABOUT</li>
+            </a>
+            <a href="#skills">
+                <li>
+                    <img src="assets/img/arrow.png"> SKILLS</li>
+            </a>
+            <a href="#projects">
+                <li>
+                    <img src="assets/img/arrow.png"> PROJECTS</li>
+            </a>
+            <a href="#contact">
+                <li>
+                    <img src="assets/img/arrow.png"> CONTACT</li>
+            </a>
+        </ul>
+    </nav>
     <footer class="bottom-trap">
-        <img src="assets/img/menu.png" class="menu-button">
     </footer>
-    
 
-    
+
+
+
 
 
 
