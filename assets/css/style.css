@@ -324,14 +324,17 @@ p {
     left: -2.5vw;
 }
 
-
+#contact-tag {
+    margin-top: 6vh;
+    text-align: center;
+}
 
 
                                                                                                                         /* START CONTACT FORM STYLING */
 
 #contact-form {
     width:100%;
-    margin: 0px 20px;
+    margin: 20px 20px;
    }
   
   form {
