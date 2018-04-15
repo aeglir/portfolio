@@ -1,6 +1,6 @@
 # Cameo's Portfolio Website
 
-(Portfolio website on Netlify)[https://cameo-codes.netlify.com]
+[Portfolio website on Netlify](https://cameo-codes.netlify.com)
 
 - [Concept](#concept)
 - [User Stories](#user-stories)
