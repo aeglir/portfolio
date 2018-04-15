@@ -1,5 +1,7 @@
 # Cameo's Portfolio Website
 
+(Portfolio website on Netlify)[https://cameo-codes.netlify.com]
+
 - [Concept](#concept)
 - [User Stories](#user-stories)
 - [Inspiration](#inspiration)
@@ -131,9 +133,3 @@ Some of the technical challenges I faced include (but definitely aren't limited 
 
 - Using JS to help with Projects popup functionality
 - Add directional arrows to indicate side-scrolling function
-
----
-## Final Product
-
-The final product can be found here:
-
